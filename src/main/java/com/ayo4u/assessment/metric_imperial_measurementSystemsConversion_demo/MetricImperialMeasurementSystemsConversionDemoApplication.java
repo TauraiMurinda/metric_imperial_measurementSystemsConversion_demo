@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MetricImperialMeasurementSystemsConversionDemoApplication {
 
 	public static void main(String[] args) {
-	 SpringApplication.run( MetricImperialMeasurementSystemsConversionDemoApplication.class, args);
+	 SpringApplication.run(MetricImperialMeasurementSystemsConversionDemoApplication.class, args);
 	}
 
 }
