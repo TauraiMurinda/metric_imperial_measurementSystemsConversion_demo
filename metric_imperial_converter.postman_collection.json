@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "8ac83c89-932c-4318-818b-2d82a8933e96",
+		"name": "metric_imperial_converter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test_error",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert/temperature/test-system/4.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert",
+						"temperature",
+						"test-system",
+						"4.5"
+					]
+				},
+				"description": "An error case to show what happens if an unknown unit of measure is specified in the path variableYou may only specify a known system such as [METRIC] or [IMPERIAL]"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/convert/area/imperial/4.5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/convert/area/imperial/4.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"convert",
+						"area",
+						"imperial",
+						"4.5"
+					]
+				},
+				"description": "Converts Mile to Kilometer or vice versa by updating the path variable"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/convert/length/metric/4.5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Converts Kilometer to Mile or vice versa by changing the path variable"
+			},
+			"response": []
+		},
+		{
+			"name": "measurements",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "si-units",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/convert/volume/metric/4.5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Converts Litres to Gallons or vice versa by updating the path variable"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/convert/temperature/imperial/4.5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Converts from Celsius to Fahrenheit and vice versa by changing the path variable"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/convert/weight/metric/4.5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Converts from Kilogram to Pound or vice versa by updating the path variable"
+			},
+			"response": []
+		}
+	]
+}
